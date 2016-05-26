@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="approve">
+  <head>
+    <meta charset="utf-8">
+    <title>Kynoch Approval</title>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="app.js"></script>
+  </head>
+  <body ng-controller="Approval">
+      <h1 style="text-align:center" ng-cloak>Do You Approve - {{clientOrderID}}?</h1>
+      <div style="text-align:center">
+          <a class="btn btn-success btn-lg" href="#" ng-click="changeStatus(1,$event)" role="button">Yes</a>
+          <a class="btn btn-danger btn-lg" href="#" ng-click="changeStatus(0,$event)" role="button">No</a>
+      </div>
+  </body>
+</html>
