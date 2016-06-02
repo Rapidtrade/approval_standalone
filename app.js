@@ -13,11 +13,11 @@ angular.module('approve',[])
           "CurrentParentRouteID" : null,
           "TransactionID" : orderid,
           "Status" : status,
-          "RouteID" : 1,
+          "RouteID" : "1",
           "Longitude" : "",
           "Latitude" : "",
           "WorkflowID" : workflowid,
-          "Comment" : status ? "Appr by cust" : "Rej by cust"
+          "Comment" : status ? "appr_cust" : "rej_ cust"
       }
 
       $.ajax({
