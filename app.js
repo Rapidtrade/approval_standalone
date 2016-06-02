@@ -10,10 +10,10 @@ angular.module('approve',[])
       var url = 'http://api.rapidtrade.biz/rest/Post?method=workflow_modify' ;
       var data = {
           "SupplierID" : supplierid,
-          "CurrentParentRouteID" : null,
+          "CurrentParentRouteID" : "",
           "TransactionID" : orderid,
           "Status" : status,
-          "RouteID" : "1",
+          "RouteID" : "2",
           "Longitude" : "",
           "Latitude" : "",
           "WorkflowID" : workflowid,
