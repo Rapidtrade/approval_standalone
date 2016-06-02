@@ -11,8 +11,8 @@
   <body ng-controller="Approval">
       <h1 style="text-align:center" ng-cloak>Do You Approve - {{clientOrderID}}?</h1>
       <div style="text-align:center">
-          <a class="btn btn-success btn-lg" href="#" ng-click="changeStatus(1,$event)" role="button">Yes</a>
-          <a class="btn btn-danger btn-lg" href="#" ng-click="changeStatus(0,$event)" role="button">No</a>
+          <a class="btn btn-success btn-lg" href="#" ng-click="changeStatus('1',$event)" role="button">Yes</a>
+          <a class="btn btn-danger btn-lg" href="#" ng-click="changeStatus('0',$event)" role="button">No</a>
       </div>
   </body>
 </html>
