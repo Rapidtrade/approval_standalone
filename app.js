@@ -17,7 +17,7 @@ angular.module('approve',[])
           "Longitude" : "",
           "Latitude" : "",
           "WorkflowID" : workflowid,
-          "Comment" : status ? "Approved By Customer" : "Rejected By Customer"
+          "Comment" : status ? "Appr by cust" : "Rej by cust"
       }
 
       $.ajax({
