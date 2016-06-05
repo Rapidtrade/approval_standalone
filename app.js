@@ -23,8 +23,7 @@ angular.module('approve',[])
       $.ajax({
           type: "POST",
           url: url,
-          data: data,
-          contentType: "application/json",
+          data: JSON.stringify(data),
           success: function(){
               alert(status ? "Approved Successfully" : "Rejected Successfully");
           },
