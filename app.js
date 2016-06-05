@@ -24,6 +24,7 @@ angular.module('approve',[])
           type: "POST",
           url: url,
           data: data,
+          contentType: "application/json",
           success: function(){
               alert(status ? "Approved Successfully" : "Rejected Successfully");
           },
